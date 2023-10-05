@@ -1,0 +1,40 @@
+1.  chromadb.PersistentClient()
+    -creating the client, similar to creating a database
+
+2.  client.create_collection()
+    client.get_or_create_collection()
+    -creating a collection(similar to creating a table in a regular database)
+    -we can specify the name and thye embedding function
+
+3.  collection.add()
+    -Add data to the table
+    -we specify the embedding(optional), documents, meta data and ids
+
+4.  collection.query()
+    -Query the collection
+    -Specify the query_texts and n_results
+
+5.  collection.update()
+    -update data or meta data using ids
+
+6.  collection.delete()
+    -delete data using ids
+
+Collection Management
+7.  collection.count()
+    -count the number of records in a collection
+
+8.  collection.get()
+    -View all the records in the collection
+
+9. collection.modify(name='')
+    -change the name of the collection
+
+10. client.list_collections()
+    -list all the collections in a client/database
+
+11. collection.delete_collection()
+    -Delete the collection
+
+12. collection.reset()
+    -delete the entire database/client
